@@ -63,8 +63,8 @@ The project covers the following steps:
 - `Code/lib/`
   Reference materials and notebook-based exploratory work.
 
-- `README.md`
-  Project documentation and setup instructions.
+- `requirements.txt`
+  Root dependency file that installs the project requirements from `Code/source/requirements.txt`.
 
 ## Learning Outcomes
 
@@ -86,3 +86,36 @@ This project helped build understanding in the following areas:
 ```bash
 git clone https://github.com/srinivaspenumarthi/Image-Segmentation-DL-Project.git
 cd Image-Segmentation-DL-Project
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Project
+
+```bash
+cd Code/source
+python engine.py
+```
+
+## Notes
+
+- A GPU is recommended for model training.
+- Make sure the dataset paths in `Code/source/config.yaml` are correct before running the scripts.
+- The code expects the dataset under `Code/input/PNG/Original` and `Code/input/PNG/Ground Truth`.
+
+## Contact
+
+For questions, collaboration, or feedback:
+
+- **Name**: Manikanta Srinivas Penumarthi
+- **Email**: [srinivaspenumarthi2244@gmail.com](mailto:srinivaspenumarthi2244@gmail.com)
+
+## Acknowledgment
+
+This project is based on medical image segmentation concepts applied to colonoscopy image analysis using deep learning techniques and the U-Net++ architecture.
+
+
