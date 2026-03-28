@@ -1,77 +1,88 @@
-# Polyp Segmentation using Unet++
+# Polyp Segmentation using U-Net++
 
-🔬 **Explore Medical Image Segmentation with Deep Learning**
+Medical image segmentation plays an important role in computer-aided diagnosis. This project focuses on segmenting polyps from colonoscopy images using a U-Net++ deep learning architecture built with PyTorch.
 
-In healthcare and medical science, the fusion of artificial intelligence and deep learning is revolutionizing diagnostics. My project focuses on the precise segmentation of polyps from colonoscopy images—a vital tool for medical practitioners.
+The goal is to generate accurate polyp masks from endoscopic images and support medical image analysis workflows with a practical deep learning pipeline.
 
-## 📁 Data
+## Overview
 
-The use of the CVC-Clinic database, containing frames from colonoscopy videos. The dataset includes polyp frames and corresponding ground truth images in both PNG and TIFF formats.
+Polyp segmentation helps identify abnormal tissue regions in colonoscopy frames. In this project, a U-Net++ model is trained on colonoscopy image data along with corresponding ground-truth masks to learn pixel-wise segmentation.
 
-## 🎯 Aim
+This repository includes dataset organization, source code, reference materials, and output folders for experiments and predictions.
 
-I aimed to develop a robust polyp segmentation model using deep learning techniques.
+## Dataset
 
-## 💻 Tech Stack
+This project uses colonoscopy image data from the CVC-ClinicDB dataset. The dataset contains:
 
-- **Language**: Python
-- **Deep Learning**: PyTorch
-- **Computer Vision**: OpenCV
-- **Libraries**: Scikit-learn, Pandas, NumPy, Albumentations, and more.
+- Original colonoscopy frames
+- Ground-truth segmentation masks
+- Data available in both PNG and TIFF formats
 
-## 🚀 Approach
+## Objective
 
-1. **Data Insight**: Understand the dataset.
-2. **Evaluation Metrics**: Grasp the evaluation criteria.
-3. **Unet Architecture**: Explore Unet for medical applications.
-4. **Unet++ Advantage**: Discover the benefits of Unet++.
-5. **Environment Setup**: Get your project environment ready.
-6. **Data Augmentation**: Enhance data for better performance.
-7. **Model Building**: Create the Unet++ model with PyTorch.
-8. **Model Training**: Train the model (GPU recommended).
-9. **Model Prediction**: Understand the modular code structure.
+The main objective of this project is to build a robust deep learning model for polyp segmentation and understand the full workflow of a medical image segmentation task, from data preparation to model prediction.
 
-## 📂 Project Structure
+## Tech Stack
 
-1. **input**: Contains data (PNG and TIFF folders).
-2. **src**: The heart of the project with modular code, including ML pipelines, engine, and config.
-3. **output**: Stores trained models and predictions.
-4. **lib**: Reference materials (original iPython notebook).
-5. **requirements.txt**: Lists all dependencies.
+- Python
+- PyTorch
+- OpenCV
+- NumPy
+- Pandas
+- Scikit-learn
+- Albumentations
 
-## 🎓 Takeaways
+## Workflow
 
-- Polyp Segmentation Insights
-- IOU Metric Understanding
-- Data Augmentation Techniques
-- Practical PyTorch Data Augmentation
-- Medical Computer Vision Applications
-- Building CNN Models
-- OpenCV for Computer Vision
-- VGG Architecture Familiarity
-- Unet and Unet++ Knowledge
-- Building VGG Blocks with PyTorch
-- Training Unet++ Models
+The project covers the following steps:
 
-## Contact Information
+1. Dataset understanding and preprocessing
+2. Evaluation metric understanding, including IoU
+3. U-Net architecture basics
+4. U-Net++ architecture exploration
+5. Environment setup
+6. Data augmentation
+7. Model building with PyTorch
+8. Model training
+9. Prediction and output generation
 
-For questions, collaborations, or further information, feel free to contact me:
+## Project Structure
 
-- **Project Reference**: Project Pro
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/vidhi-waghela-434663198/)
-- **Email**: [vidhiwaghela99@gmail.com](mailto:vidhiwaghela99@gmail.com)
+- `data/`
+  Contains the dataset in PNG and TIFF formats.
 
-## 🚀 Getting Started
+- `Code/input/`
+  Input data used by the training and segmentation pipeline.
 
-```python
-# Clone the repository
-git clone https://github.com/YourUsername/YourRepository.git
+- `Code/source/`
+  Core source code for preprocessing, model development, training, and inference.
 
-# Navigate to the project directory
-cd Medical-Image-Segmentation-Deep-Learning-Project
+- `Code/output/`
+  Stores generated outputs such as model results, predictions, or saved artifacts.
 
-# Install dependencies
-pip install -r requirements.txt
+- `Code/lib/`
+  Reference materials and notebook-based exploratory work.
 
+- `README.md`
+  Project documentation and setup instructions.
 
+## Learning Outcomes
 
+This project helped build understanding in the following areas:
+
+- Medical image segmentation
+- Intersection over Union (IoU) metric
+- Data augmentation for computer vision
+- Practical PyTorch workflows
+- OpenCV for image processing
+- CNN-based segmentation models
+- U-Net and U-Net++ architecture
+- Training deep learning models for medical imaging tasks
+
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/srinivaspenumarthi/Image-Segmentation-DL-Project.git
+cd Image-Segmentation-DL-Project
