@@ -32,7 +32,7 @@ from argparse import ArgumentParser
 # training the model
 
 with open("config.yaml") as f:
-    config = yaml.load(f)
+    config = yaml.safe_load(f)
 
 extn = config["extn"]
 epochs = config["epochs"]
@@ -143,7 +143,7 @@ parser.add_argument("--test_img", default="../input/PNG/Original/50.png", help="
 
 opt = parser.parse_args()
 with open("config.yaml") as f:
-    config = yaml.load(f)
+    config = yaml.safe_load(f)
 
 im_width = config["im_width"]
 im_height = config["im_height"]
